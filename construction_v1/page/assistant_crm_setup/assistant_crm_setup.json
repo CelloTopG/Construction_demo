@@ -1,0 +1,13 @@
+{
+  "doctype": "Page",
+  "name": "construction_v1_setup",
+  "module": "Assistant Settings",
+  "title": "Assistant CRM Setup",
+  "standard": 1,
+  "roles": [
+    {"role": "System Manager"},
+    {"role": "Construction Assistant Admin"}
+  ]
+}
+
+

@@ -1,0 +1,2 @@
+# Failed Query Log DocType
+

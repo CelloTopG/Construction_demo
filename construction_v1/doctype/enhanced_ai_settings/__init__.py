@@ -1,0 +1,2 @@
+# Enhanced AI Settings DocType
+

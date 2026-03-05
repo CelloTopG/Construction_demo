@@ -1,0 +1,2 @@
+# CoreBusiness Settings DocType
+

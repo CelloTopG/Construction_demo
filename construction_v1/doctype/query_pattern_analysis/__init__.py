@@ -1,0 +1,2 @@
+# Query Pattern Analysis DocType
+

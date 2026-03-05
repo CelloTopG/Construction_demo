@@ -1,0 +1,2 @@
+# AI Response Feedback DocType
+

@@ -1,0 +1,2 @@
+# VoIP Settings DocType
+

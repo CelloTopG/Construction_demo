@@ -1,0 +1,2 @@
+# Omnichannel Message DocType
+

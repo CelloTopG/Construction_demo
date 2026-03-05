@@ -1,0 +1,136 @@
+{
+    "doctype": "DocType",
+    "name": "Site Daily Log",
+    "module": "Assistant CRM",
+    "custom": 0,
+    "is_submittable": 0,
+    "autoname": "SDL-.YYYY.-.MM.-.#####",
+    "allow_rename": 1,
+    "editable_grid": 1,
+    "track_changes": 1,
+    "fields": [
+        {
+            "fieldname": "project",
+            "label": "Project",
+            "fieldtype": "Data",
+            "reqd": 1,
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "superintendent",
+            "label": "Superintendent",
+            "fieldtype": "Link",
+            "options": "User",
+            "default": "Session User",
+            "reqd": 1,
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "date",
+            "label": "Date",
+            "fieldtype": "Date",
+            "default": "today",
+            "reqd": 1,
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "weather",
+            "label": "Weather Condition",
+            "fieldtype": "Data"
+        },
+        {
+            "fieldname": "section_voice",
+            "label": "Voice Recording",
+            "fieldtype": "Section Break"
+        },
+        {
+            "fieldname": "audio_note",
+            "label": "Audio Note",
+            "fieldtype": "Attach",
+            "description": "Upload audio recording from your mobile device."
+        },
+        {
+            "fieldname": "process_voice",
+            "label": "Process Voice Note",
+            "fieldtype": "Button"
+        },
+        {
+            "fieldname": "section_analysis",
+            "label": "AI Analysis",
+            "fieldtype": "Section Break"
+        },
+        {
+            "fieldname": "status",
+            "label": "Status",
+            "fieldtype": "Select",
+            "options": "Draft\nProcessing\nAnalyzed\nAction Required\nCompleted",
+            "default": "Draft",
+            "read_only": 1,
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "transcription",
+            "label": "Full Transcription",
+            "fieldtype": "Long Text",
+            "read_only": 1
+        },
+        {
+            "fieldname": "ai_summary",
+            "label": "AI Executive Summary",
+            "fieldtype": "Small Text",
+            "read_only": 1
+        },
+        {
+            "fieldname": "section_items",
+            "label": "Extracted Action Items & Suggestions",
+            "fieldtype": "Section Break"
+        },
+        {
+            "fieldname": "ai_extracted_items",
+            "label": "Action Items JSON",
+            "fieldtype": "Code",
+            "options": "JSON",
+            "read_only": 1,
+            "description": "Itemized tasks and logic captured from the expert."
+        },
+        {
+            "fieldname": "expert_knowledge_nugget",
+            "label": "Captured Expertise",
+            "fieldtype": "Long Text",
+            "read_only": 1,
+            "description": "Specific 'How/Why' logic captured for training."
+        },
+        {
+            "fieldname": "section_footer",
+            "label": "Metadata",
+            "fieldtype": "Section Break"
+        },
+        {
+            "fieldname": "processed_at",
+            "label": "Processed At",
+            "fieldtype": "Datetime",
+            "read_only": 1
+        }
+    ],
+    "permissions": [
+        {
+            "role": "System Manager",
+            "read": 1,
+            "write": 1,
+            "create": 1,
+            "delete": 1
+        },
+        {
+            "role": "Superintendent",
+            "read": 1,
+            "write": 1,
+            "create": 1
+        },
+        {
+            "role": "Foreman",
+            "read": 1,
+            "write": 1,
+            "create": 1
+        }
+    ]
+}
